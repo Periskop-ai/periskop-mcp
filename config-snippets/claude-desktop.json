@@ -1,0 +1,15 @@
+{
+  "_comment": "Claude Desktop config (claude_desktop_config.json). Periskop is a remote Streamable-HTTP server; Desktop reaches it through the mcp-remote stdio bridge. Replace YOUR_PERISKOP_API_KEY. Get a key at https://periskop.ai/developer",
+  "mcpServers": {
+    "periskop": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.periskop.ai/v1/mcp",
+        "--header",
+        "Authorization: Bearer YOUR_PERISKOP_API_KEY"
+      ]
+    }
+  }
+}

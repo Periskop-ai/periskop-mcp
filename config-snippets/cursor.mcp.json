@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "periskop": {
+      "url": "https://mcp.periskop.ai/v1/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_PERISKOP_API_KEY"
+      }
+    }
+  }
+}

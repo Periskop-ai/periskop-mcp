@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.Periskop-ai/shopping-discovery",
+  "description": "Product discovery for AI agents: ranked products and bundles from the open merchant web.",
+  "version": "0.1.0",
+  "websiteUrl": "https://periskop.ai",
+  "repository": {
+    "url": "https://github.com/Periskop-ai/periskop-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.periskop.ai/v1/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <your Periskop API key, e.g. dp_xxx>. Get one at https://periskop.ai/developer",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
